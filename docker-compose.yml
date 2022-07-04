@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: elixir-alura:0.0.1
+    restart: always
+    volumes:
+      - .:/myapp
+    user: "${UID}:${GID}"
